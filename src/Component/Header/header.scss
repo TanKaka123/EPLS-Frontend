@@ -1,0 +1,45 @@
+@import '../../valuable';
+//valuable & import & nested
+
+.container{
+    padding: 1% 3%;
+
+    #header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            max-width: 5rem;
+            cursor : pointer;
+        }
+        
+        .navbar{
+            display: flex;
+            text-decoration: none;
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                padding-right: 4rem;
+                font-family: $font-primary;
+                font-weight: 700;
+                font-size : 20px;
+
+                 a{
+                    text-decoration: none;
+                    list-style-type: none;
+                    color: white;
+                }
+            }
+        }   
+    }
+}
+
+
+
+
+
+
+
