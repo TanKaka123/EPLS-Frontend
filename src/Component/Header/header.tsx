@@ -1,5 +1,6 @@
 import React from "react";
-import "./header.scss";
+import "./_header.scss";
+import './_navigation.scss'
 
 function header() {
   return (

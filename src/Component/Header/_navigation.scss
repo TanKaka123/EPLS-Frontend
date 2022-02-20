@@ -1,0 +1,52 @@
+@import '../../Abstracts/valuable';
+
+.navbar{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+
+    li{
+        display: inline-block;
+        font-family: $font-primary;
+        font-size : 20px;
+        font-weight: 700;
+        padding-right: 4rem;
+
+         a{
+            color: white;
+            list-style-type: none;
+            position: relative !important;
+            text-decoration: none;
+            transition: all 0.3s ease .1s;
+        }
+         
+    }
+    
+}   
+
+nav ul li a::before,
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    left: auto;
+    width: 0;
+    height: 3px;
+}
+
+nav ul li a::before {
+    background-color: $color-secondary;
+    transition: all .25s cubic-bezier(.694, .048, .335, 1) .15s;
+}
+
+nav ul li a::after {
+    background-color: $color-primary;
+    transition: all .25s cubic-bezier(.694, .048, .335, 1);
+}
+
+nav ul li a:hover::after,
+nav ul li a:hover::before {
+    width: 100%;
+    left: 0;
+}
