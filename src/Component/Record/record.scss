@@ -1,0 +1,9 @@
+@import '../../Abstracts//valuable';
+@import '../../Abstracts/mixin';
+
+.title{
+    font-size: $fontsize-head;
+    font-family : $font-primary;
+    @include striker;
+
+}

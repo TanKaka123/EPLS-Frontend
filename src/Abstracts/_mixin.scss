@@ -1,0 +1,33 @@
+@mixin striker {
+    & {
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+        transform: translate(-50%, -50%);
+    }
+    &:after {
+        animation: strikethrough 1s 0.5s cubic-bezier(0.55, 0, 0.1, 1) 1;
+        content: "";
+        background: black;
+        display: block;
+        height: 4px;
+        position: absolute;
+        margin-top: -0.6em;
+        transform-origin: center left;
+        transition: transform 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+        width: 100%;
+    }
+    &:hover:after {
+        transform: scaleX(0);
+        transform-origin: center right;
+    }
+    @keyframes strikethrough {
+        from {
+            transform: scaleX(0);
+        }
+        to {
+            transform: scaleX(1);
+        }
+    }
+}
