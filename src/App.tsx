@@ -28,7 +28,6 @@ function App() {
       <div className="distanceY">
         <Footer />
       </div>
-
     </div>
   );
 }
