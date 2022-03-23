@@ -1,8 +1,71 @@
-.banner{
-  
-    max-width: 94vw;
+@import '../../Abstracts/valuable';
+
+.banner-contain{
+    position : relative;
+}
+.banner{ 
+    width: 94vw;
     display: block;
     margin: auto;
     margin-top: 10px;
     position: relative;
 }
+.desc-banner{
+  font-family: $font-secondary;
+  margin-top: 3vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  padding-right: 10px;
+}
+.title-banner{
+    font-family : $font-primary;
+    font-size : 60px;
+    margin-top: 20vh;
+    
+}
+.line{
+    background-color: $color-secondary;
+    width: 20vw;
+    height: 0.7vw;
+    margin-top: -1.5vw;
+}
+.text-banner {
+    position : absolute;
+    top:0vh;
+    left :1vw;
+    background-color:rgba(0, 0, 0, 0.722);
+    
+   
+    max-width: 55vw;
+    height: 100%;  
+    padding-left: 3vw;   
+}
+
+@media (min-width:46.25em) and(max-width:63.9375em) {
+    .title-banner{
+        font-size: $font-size-tablet-primary ;
+        margin-top: 10vh;
+    }
+    .desc-banner{
+        font-size: 3vh;
+    }
+    .line{
+        width: 30vw;
+    }
+}
+
+@media (max-width:46.24em){
+    .title-banner{
+        font-size: $font-size-tablet-secondary;
+        margin-top: 7vh;
+    }
+    .desc-banner{
+        font-size: 2vh;
+    }
+    .line{
+        width: 30vw;
+    }
+}
+
+
+

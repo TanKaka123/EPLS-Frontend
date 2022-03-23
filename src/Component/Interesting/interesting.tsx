@@ -3,8 +3,8 @@ import './interesting.scss';
 
 function interesting() {
   return (
-    <div>
-      <h1 className="title">EPL, Có thể bạn chưa biết ?</h1>
+    <div id="other">
+      <h1 className="title-other">EPL, Có thể bạn chưa biết ?</h1>
     </div>
   );
 }

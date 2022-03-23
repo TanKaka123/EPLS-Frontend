@@ -1,9 +1,19 @@
 @import '../../Abstracts//valuable';
 @import '../../Abstracts/mixin';
 
-.title{
+.title-other{
     font-size: $fontsize-head;
     font-family : $font-primary;
     @include striker;
 
+}
+@media (min-width:46.25em) and(max-width:63.9375em) {
+    .title-other{
+        font-size: $font-size-tablet-primary;
+    }
+}
+@media (max-width:46.2em) {
+    .title-other{
+        font-size: $font-size-tablet-secondary;
+    }   
 }

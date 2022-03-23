@@ -1,9 +1,107 @@
 @import '../../Abstracts//valuable';
 @import '../../Abstracts/mixin';
 
-.title{
+.title-star{
     font-size: $fontsize-head;
     font-family : $font-primary;
     @include striker;
 
+}
+@media (min-width:46.25em) and(max-width:63.9375em) {
+    .title-star{
+        font-size: $font-size-tablet-primary;
+    }
+}
+@media (max-width:46.2em) {
+    .title-star{
+        font-size: $font-size-tablet-secondary;
+    }   
+}
+.list-icon-clb{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+}
+.icon-clb{
+    max-width: 3em;
+    cursor : pointer;
+}
+.list-player{
+    display : flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 3em;
+    flex: 1 1 auto;
+}
+
+@mixin desc-player{
+    font-family: $font-primary;
+    font-size: 1em;
+    text-align: center;
+}
+.desc-player-name{
+    margin-top:10px;
+    
+    @include desc-player()
+}
+.desc-player-role{
+    color : $color-primary;
+    @include desc-player()
+}
+.info-player{
+    max-width: 11em;
+}
+.avt-player
+{
+    background-color: white;
+    display: block;
+    margin: auto;
+    width:6em;
+}
+.nation{
+    display: flex;
+    justify-content: center;
+}
+.desc-player-nationality{
+    @include desc-player();
+    margin-left: 10px;
+}
+.desc-manager-name{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+.desc-manager-time{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+
+.desc-manager-age{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+.info-manager{
+    display: flex;
+    justify-content: center; 
+    margin-top: 2em;
+}
+.avt-manager{
+   display: block;
+  //  margin: auto;
+    width:6em;
+    height: 6em;
+}
+.infor-detail-manager{
+    color : $color-primary;
+    margin-left: 10px;
+  
+}
+.detail-manager{
+    margin-left: 5px;
+}
+.hidden{
+    display: flex;
+    visibility: hidden;
 }

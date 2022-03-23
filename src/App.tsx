@@ -1,12 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import "./App.scss";
 import Header from "./Component/Header/header";
 import Banner from "./Component/Banner/banner";
 import Ranking from "./Component/Ranking/ranking";
-import Managers from "./Component/Managers/managers";
 import Stars from "./Component/Stars/stars";
 import Interesting from "./Component/Interesting/interesting";
 import Footer from "./Component/Footer/footer";
+import Record from "./Component/Record/record";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Ranking />
       </div>
       <div className="distanceY">
-        <Managers />
+        <Record />
       </div>
       <div className="distanceY">
         <Stars />

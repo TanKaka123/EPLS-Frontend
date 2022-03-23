@@ -3,8 +3,8 @@ import './ranking.scss';
 
 function ranking() {
     return (
-        <div>
-            <h1 className="title ">Xếp hạng top 7 </h1>
+        <div id="ranking">
+            <h1 className="title-ranking">Xếp hạng top 7 </h1>
         </div>
     );
 }

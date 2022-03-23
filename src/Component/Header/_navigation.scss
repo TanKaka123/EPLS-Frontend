@@ -1,28 +1,31 @@
-@import '../../Abstracts/valuable';
+@import "../../Abstracts/valuable";
 
-.navbar{
+.navbar {
     display: flex;
     list-style-type: none;
     text-decoration: none;
 
-    li{
+    li {
         display: inline-block;
         font-family: $font-primary;
-        font-size : 20px;
+        font-size: 20px;
         font-weight: 700;
         padding-right: 4rem;
 
-         a{
+        a {
             color: white;
             list-style-type: none;
             position: relative !important;
             text-decoration: none;
-            transition: all 0.3s ease .1s;
+            transition: all 0.3s ease 0.1s;
         }
-         
     }
-    
-}   
+}
+@media (max-width: 63.9375em) {
+    .navbar {
+        display: none;
+    }
+}
 
 nav ul li a::before,
 nav ul li a::after {
@@ -37,12 +40,12 @@ nav ul li a::after {
 
 nav ul li a::before {
     background-color: $color-secondary;
-    transition: all .25s cubic-bezier(.694, .048, .335, 1) .15s;
+    transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1) 0.15s;
 }
 
 nav ul li a::after {
     background-color: $color-primary;
-    transition: all .25s cubic-bezier(.694, .048, .335, 1);
+    transition: all 0.25s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 
 nav ul li a:hover::after,

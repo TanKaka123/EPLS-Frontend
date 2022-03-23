@@ -1,3 +1,53 @@
 @import '../../Abstracts/valuable';
 @import '../../Abstracts//mixin';
 
+.footer-contain{
+    background-color: #151414;
+    padding-top: 5em;
+   
+}
+.logo-footer{
+    display : block;
+    margin:auto;
+}
+.title-contact{
+    text-align : center;
+    font-family : $font-primary;
+    font-size: 3em;  
+}
+.line-footer{
+    background-color: $color-secondary;
+    height: 8px;
+    width: 15vw;
+    display: block;
+    margin: auto;
+}
+.group-icon-contact{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 3em;
+}
+.icon-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius:50%;
+    width: 3em;
+    height:3em;
+    cursor : pointer;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 5em;
+   
+   p{
+       margin-left: 10px;
+   }
+
+}
