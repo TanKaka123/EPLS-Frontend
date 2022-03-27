@@ -11,13 +11,20 @@
     .title-star{
         font-size: $font-size-tablet-primary;
     }
+ 
   
 }
 @media (max-width:46.2em) {
     .title-star{
         font-size: $font-size-tablet-secondary;
     }   
-    
+    .hidden{
+        display: none;
+        font-size: 0px;
+    }
+    .info-manager{
+        justify-content: left; 
+    }
   
 }
 .list-icon-clb{

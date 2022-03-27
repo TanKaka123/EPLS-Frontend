@@ -8,7 +8,7 @@ function Record() {
     const fetchRecord = async () => {
       try {
         const res = await recordApi.getAll();
-        console.log(res.data);
+     
         setListRecord(res.data);
       } catch (err) {
         console.log("error : ", err);
@@ -43,8 +43,8 @@ function Record() {
             if(val["title"] == "Goals" && position==1){
               position=position+1;
               return (
-                <div className="row-record-1st">
-                  <div className="">
+                <div className="row-record-1st" key={key}>
+                  <div className="">0
                   <div className="">
                     <h1 className="position-record-1st">{val["position"]} </h1>
                   </div>
@@ -67,7 +67,7 @@ function Record() {
             }
             else if (val["title"] == "Goals" && key != 1) {
               return (
-                <div className="row-record">
+                <div className="row-record"  key={key}>
                   <div className="position-record">
                     <h1 className="">{val["position"]}. </h1>
                   </div>
@@ -96,7 +96,7 @@ function Record() {
            if (val["title"] == "Assists" && position==1 ){
             position=position+1;
               return (
-                <div className="row-record-1st">
+                <div className="row-record-1st"  key={key}>
                   <div className="">
                   <div className="">
                     <h1 className="position-record-1st">{val["position"]} </h1>
@@ -121,7 +121,7 @@ function Record() {
             }
             else if (val["title"] == "Assists") {
               return (
-                <div className="row-record">
+                <div className="row-record"  key={key}>
                   <div className="position-record">
                     <h1 className="">{val["position"]}. </h1>
                   </div>
@@ -150,7 +150,7 @@ function Record() {
            if (val["title"] == "Passes" && position==1 ){
             position=position+1;
               return (
-                <div className="row-record-1st">
+                <div className="row-record-1st"  key={key}>
                   <div className="">
                   <div className="">
                     <h1 className="position-record-1st">{val["position"]} </h1>
@@ -175,7 +175,7 @@ function Record() {
             }
             else if (val["title"] == "Passes") {
               return (
-                <div className="row-record">
+                <div className="row-record"  key={key}>
                   <div className="position-record">
                     <h1 className="">{val["position"]}. </h1>
                   </div>
@@ -206,7 +206,7 @@ function Record() {
            if (val["title"] == "Saves" && position==1 ){
             position=position+1;
               return (
-                <div className="row-record-1st">
+                <div className="row-record-1st"  key={key}>
                   <div className="">
                     <div className="">
                       <h1 className="position-record-1st">{val["position"]} </h1>
@@ -231,7 +231,7 @@ function Record() {
             }
             else if (val["title"] == "Saves") {
               return (
-                <div className="row-record">
+                <div className="row-record"  key={key}>
                   <div className="position-record">
                     <h1 className="">{val["position"]}. </h1>
                   </div>
@@ -261,7 +261,7 @@ function Record() {
            if (val["title"] == "Red Cards" && position==1 ){
             position=position+1;
               return (
-                <div className="row-record-1st">
+                <div className="row-record-1st"  key={key}>
                   <div className="">
                     <div className="">
                       <h1 className="position-record-1st">{val["position"]} </h1>
@@ -286,7 +286,7 @@ function Record() {
             }
             else if (val["title"] == "Red Cards") {
               return (
-                <div className="row-record">
+                <div className="row-record" key={key}>
                   <div className="position-record">
                     <h1 className="">{val["position"]}. </h1>
                   </div>

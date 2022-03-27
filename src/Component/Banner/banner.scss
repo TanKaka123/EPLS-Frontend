@@ -52,6 +52,9 @@
     .line{
         width: 30vw;
     }
+    .desc-banner{
+        display: none;
+    }
 }
 
 @media (max-width:46.24em){
@@ -64,6 +67,14 @@
     }
     .line{
         width: 30vw;
+    }
+    .text-banner
+    {
+       margin-top: 0;
+        left : 0;
+    }
+    .desc-banner{
+        display: none;
     }
 }
 

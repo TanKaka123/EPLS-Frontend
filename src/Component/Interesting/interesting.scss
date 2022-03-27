@@ -26,6 +26,9 @@
     .img-champ{
         max-width:40vw;
     }
+    .des-champion{
+        padding-top: 10%;
+    }
 }
 @media (max-width:46.2em) {
     .title-other{
@@ -33,6 +36,9 @@
     }   
     .img-champ{
         max-width:70vw;
+    }
+    .des-champion{
+        padding-top: 10%;
     }
 }
 .img-overlay{
@@ -49,7 +55,7 @@
     font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
     word-wrap: break-word;
     font-weight: 200;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align:justify;
     padding-top: 20%;
     

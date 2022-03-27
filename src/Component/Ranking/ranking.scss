@@ -17,3 +17,85 @@
         font-size: $font-size-tablet-secondary;
     }   
 }
+ tr {
+    border-bottom: 0.5px solid white;
+}
+.table-rank{
+    border-collapse: collapse;
+    width: 70vw;
+    margin: auto;
+    font-family: $font-primary;
+    
+ 
+}
+.list-five-match{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.icon-result{
+    max-width: 1.3em;
+}
+.all-points{
+    text-align: center;
+}
+.rank-scores{
+    font-weight:bolder;
+}
+.team-rank{
+    display: flex;
+    
+    align-items: center;
+    padding: 1em;
+    
+}
+.img-team-ranking{
+    max-width: 2em;
+    display: block;
+    margin-right: 1em;
+}
+.row-table-rank{
+   height: 3em;
+}
+.row-table-rank:hover{
+    background-color: $color-primary;
+}
+.tittle-table-rank{
+    height: 3em;
+    font-size: large;
+    color :bisque;
+}
+.color-red{
+    color : rgb(245, 84, 84); 
+    font-weight:bolder;
+    font-size: 1.5em;
+}
+.color-blue{
+    color: rgb(72, 133, 240); 
+    font-weight:bolder;
+     font-size: 1.5em;
+}
+.font-bold{
+    font-weight:bolder;
+    font-size: 1.5em;
+}
+.scroll-rank{
+    display: flex;
+        
+    overflow: auto;
+    flex-wrap:nowrap;
+
+}
+
+
+@media (max-width:63.9375em) {
+    .hidden-device
+{
+    display: none;
+}
+.tittle-table-rank th{
+    font-size: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+}

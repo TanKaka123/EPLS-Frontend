@@ -12,7 +12,7 @@ function interesting() {
           champion.map((value,key)=>{
             const [displayDesc,setDisplayDesc]=useState(" ")
             return(
-              <div className="img-overlay">
+              <div className="img-overlay" key={key}>
               
                 <img src={value['url']} alt="" className="img-champ" onMouseOver={()=>setDisplayDesc(value['url'])} onMouseOut={()=>setDisplayDesc(' ')}/>
                 {displayDesc==value['url'] && <h1 className="des-champion">{value['des']}</h1>}

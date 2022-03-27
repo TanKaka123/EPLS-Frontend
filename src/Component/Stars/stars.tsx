@@ -15,7 +15,6 @@ function Star() {
     const fetchClbs = async () => {
       try {
         const res = await clbApi.getAll();
-        console.log(res.data);
         setListClbs(res.data);
         setListTeamPlayer(res.data[0]["teamName"]);
       } catch (err) {
@@ -26,7 +25,6 @@ function Star() {
     const fetchPlayers = async () => {
       try {
         const res = await playerApi.getAll();
-        console.log(res.data);
         setListPlayer(res.data);
       } catch (err) {
         console.log("error : ", err);
@@ -35,7 +33,6 @@ function Star() {
     const fetchManagers = async () => {
       try {
         const res = await managerApi.getAll();
-        console.log(res.data);
         setListManager(res.data);
       } catch (err) {
         console.log("error : ", err);
@@ -46,22 +43,19 @@ function Star() {
     fetchManagers();
   }, []);
  
-  console.log(listClbs[0]);
   return (
     <div id="star">
       <h1 className="title-star">Ngôi sao</h1>
       <div className="list-icon-clb">
         {listClbs.map((val, key) => {
-          console.log(typeof key);
           return (
-            <div className="">
+            <div className="" key={key}>
               <img
                 src={val["imgTeam"]}
                 alt=""
                 className="icon-clb"
                 onClick={() => {
                   setListTeamPlayer(val["teamName"]);
-                  console.log(listTeamPlayer);
                 }}
               />
             </div>
@@ -70,10 +64,9 @@ function Star() {
       </div>
       <div className="list-manager">
       {listManagers.map((val, key) => {
-        console.log('manager : ',listTeamPlayer,' ', val["team"])
           if (listTeamPlayer == val["team"])
             return (
-              <div className="info-manager">
+              <div className="info-manager" key={key}>
                 <div className="hidden">
                 <div className="detail-manager">
                   <h1 className="desc-manager-name">Name </h1>
@@ -103,10 +96,9 @@ function Star() {
       </div>
       <div className="list-player">
         {listplayer.map((val, key) => {
-          console.log(listTeamPlayer, " and ");
           if (listTeamPlayer == val["team"])
             return (
-              <div className="info-player">
+              <div className="info-player" key={key}>
                 <img src={val["avtPlayer"]} alt="" className="avt-player" />
                 <h1 className="desc-player-name">{val["playerName"]}</h1>
                 <h1 className="desc-player-role">{val["role"]}</h1>
@@ -128,6 +120,9 @@ function Star() {
                  {val["nationality"] =='Senegal' && <flag.Senegal/>}
                  {val["nationality"] =='Belgium' && <flag.Belgium/>}
                  {val["nationality"] =='Netherlands' && <flag.Netherlands/>}
+                 {val["nationality"] =='SouthKorea' && <flag.SouthKorea/>}
+                 {val["nationality"] =='Sweden' && <flag.Sweden/>}
+                 {val["nationality"] =='Jamaica' && <flag.Jamaica/>}
                   <h1 className="desc-player-nationality">{val["nationality"]}</h1>
                   
                 </div>
