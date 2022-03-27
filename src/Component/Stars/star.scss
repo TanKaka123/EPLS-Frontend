@@ -11,11 +11,14 @@
     .title-star{
         font-size: $font-size-tablet-primary;
     }
+  
 }
 @media (max-width:46.2em) {
     .title-star{
         font-size: $font-size-tablet-secondary;
     }   
+    
+  
 }
 .list-icon-clb{
     display: flex;

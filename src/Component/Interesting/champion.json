@@ -1,0 +1,32 @@
+[
+    {
+        "url":"./Champion/2021.png",
+        "des":"Man City đã lên ngôi vô địch Premier League lần thứ ba trong bốn mùa giải sau khi Manchester United để thua Leicester trên sân nhà",
+        "season":"2020/21"
+    }    ,
+    {
+        "url":"./Champion/1920.png",
+        "des":"Liverpool, chức vô địch sau 30 năm và Jurgen Klopp-người thay đổi vận mệnh",
+        "season":"2019/20"
+    }    ,
+    {
+        "url":"./Champion/1819.png",
+        "des":"Man City chính thức bảo vệ được ngôi vương khi đăng quang với 98 điểm, nhiều hơn 1 điểm so với Liverpool",
+        "season":"2018/19"
+    }    ,
+    {
+        "url":"./Champion/1718.png",
+        "des":"Man City cán đích ở vị trí số 1 với số điểm kỷ lục cùng rất nhiều cột mốc vô tiền khoáng hậu",
+        "season":"2017/18"
+    }    ,
+    {
+        "url":"./Champion/1617.png",
+        "des":"Danh hiệu vô địch Premier League thứ 6 trong lịch sử đội bóng Chelsea",
+        "season":"2016/17"
+    }    ,
+    {
+        "url":"./Champion/1516.png",
+        "des":"Chức vô địch của Leicester được xem là câu chuyện cổ tích kỳ vĩ nhất lịch sử bóng đá Anh",
+        "season":"2015/16"
+    }    
+]
