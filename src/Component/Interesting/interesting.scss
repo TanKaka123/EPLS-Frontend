@@ -11,64 +11,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+   
 }
-.img-champ{
-    max-width: 26vw;
-    margin-bottom: 2rem;
-    cursor: pointer;
-}
+
 
 @media (min-width:46.25em) and(max-width:63.9375em) {
     .title-other{
         font-size: $font-size-tablet-primary;
-    }
-    .img-champ{
-        max-width:40vw;
-    }
-    .des-champion{
-        padding-top: 10%;
     }
 }
 @media (max-width:46.2em) {
     .title-other{
         font-size: $font-size-tablet-secondary;
     }   
-    .img-champ{
-        max-width:70vw;
-    }
-    .des-champion{
-        padding-top: 10%;
-    }
 }
+
 .img-overlay{
     position: relative;
+    text-align: center;
 }
-.des-champion{
-    position:absolute;
-    top: 0;
-    left: 0;
-    margin-top: 0px;
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
-    word-wrap: break-word;
-    font-weight: 200;
-    font-size: 1.2em;
-    text-align:justify;
-    padding-top: 20%;
-    
-}
-.des-champion-season{
-    position:absolute;
-    top: 0;
-    left: 0;
-    margin-top: 0px;
-    background: rgba(0, 0, 0, 0.6);
-    font-family: PremierSans-Regular,Arial,Helvetica Neue,Helvetica,sans-serif;
-    word-wrap: break-word;
-    font-weight: 600;
-    font-size: 1.3em;
 
+.note{
+   text-align: center;
+   transform: translateY(-100%);
+   font-family: $font-primary;
+   font-size: medium;
+   color : rgb(178, 173, 173);
 }

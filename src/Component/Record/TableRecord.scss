@@ -1,0 +1,117 @@
+
+@import '../../Abstracts//valuable';
+@import '../../Abstracts/mixin';
+
+.row_record{
+    display: flex;
+    border: 1px solid ;
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+}
+
+.position_record{
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 10px;
+    margin-right: 1.2rem;
+}
+
+.number_record{
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 13px;
+}
+
+.infor__record-player{
+    margin-right: 1rem;
+    width: 10rem;
+   h1:first-child{
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-size: 13px;
+    }
+    h1:nth-child(2){
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:10.8px;
+    }
+}
+
+.badge_image {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+}
+.table--record{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 2%;
+    margin-bottom: 2rem;
+
+    &>h1{
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        margin: 0%;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+}
+
+.row_record--1st{
+    background: linear-gradient(270deg,#963cff,#37003c);
+    color : white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;  
+    
+    .position_record-1st{
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-size:1.2rem;
+        font-weight:600;
+        margin: 0%;
+    }
+    .number_record-1st{
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-size: 3rem;
+        color:$color-secondary;
+        margin: 0%;
+    }
+  
+}
+
+.badge_image-1st{
+    display: block;
+    margin-top: auto;
+
+    img{
+        border-radius: 100%;
+        background-color: white;
+        padding: 15px;
+    }
+   
+}
+
+.infor_record-1st{
+    width: 200px;
+
+    h1:first-child
+    {
+        font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    h1:nth-child(2)
+    {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size:1rem;
+        font-weight: 200;
+    }
+}
+
+@media (max-width:46.2em) {
+    .table--record{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+}

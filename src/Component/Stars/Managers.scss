@@ -1,0 +1,45 @@
+@import '../../Abstracts//valuable';
+@import '../../Abstracts/mixin';
+
+.desc_manager--name{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+.desc_manager--time{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+
+.desc_manager--age{
+    font-family: $font-primary;
+    font-size: 1em;
+}
+.info_manager{
+    display: flex;
+    justify-content: center; 
+    margin-top: 2em;
+}
+.avt_manager{
+   display: block;
+  //  margin: auto;
+    width:6em;
+    height: 6em;
+}
+.infor_detail--manager{
+    color : $color-primary;
+    margin-left: 10px;
+}
+.detail_manager{
+    margin-left: 5px;
+}
+.hidden{
+    display: flex;
+    visibility: hidden;
+}
+@media (max-width:46.2em) {
+    .hidden{
+        display: none;
+        font-size: 0px;
+    }
+  
+}

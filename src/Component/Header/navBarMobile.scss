@@ -1,35 +1,39 @@
 @import '../../Abstracts/valuable';
-.menu-item{
+
+.menu_item{
     display : none;
     cursor : pointer;
 }
-.menu-contain{
+
+.menu_contain{
     position: fixed;
     z-index: 10;
     background-color: black;
     width: 100%;
     height: 100%;
+    animation : slide-on 1s;
 }
+
 .menu{
     position: relative;
-    
+    &_logo{
+        margin-top: 5vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &_close{
+        position: absolute;
+        font-family:$font-primary;
+        cursor: pointer;
+        font-size : 2.5em;
+        top:  -6vh;
+        right: 5vw;
+    }
+   
 }
-.logo-menu{
-    margin-top: 5vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.close-menu{
-    position: absolute;
-    font-family:$font-primary;
-    cursor: pointer;
-    font-size : 2.5em;
-    top:  -6vh;
-    right: 5vw;
-    
-}
-.nav-menu{
+
+.menu_nav{
     
     list-style-type: none;
     text-align: center;
@@ -43,7 +47,7 @@
         a{
             color: white;
             text-decoration: none;
-        }
+         }
     }
     li:hover
     {
@@ -58,8 +62,12 @@
 }
 
 
-@media (max-width:63.9375em) {
-    .menu-item{
-        display : block;
+@keyframes slide-on{
+    0%{
+        transform: translateX(-100%);;
+    }
+    100%{
+        transform: translateX(0%);;
     }
 }
+

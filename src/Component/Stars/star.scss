@@ -1,44 +1,40 @@
 @import '../../Abstracts//valuable';
 @import '../../Abstracts/mixin';
 
-.title-star{
+.title--star{
     font-size: $fontsize-head;
     font-family : $font-primary;
     @include striker;
 
 }
-@media (min-width:46.25em) and(max-width:63.9375em) {
-    .title-star{
-        font-size: $font-size-tablet-primary;
-    }
- 
-  
-}
 @media (max-width:46.2em) {
-    .title-star{
+    .title--star{
         font-size: $font-size-tablet-secondary;
     }   
     .hidden{
         display: none;
         font-size: 0px;
     }
-    .info-manager{
-        justify-content: left; 
-    }
   
 }
-.list-icon-clb{
+@media (min-width:46.25em) and(max-width:63.9375em) {
+    .title--star{
+        font-size: $font-size-tablet-primary;
+    }
+}
+
+.list_icon--clb{
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
     align-items: center;
     max-width: 100%;
 }
-.icon-clb{
+.icon--clb{
     max-width: 3em;
     cursor : pointer;
 }
-.list-player{
+.list--player{
     display : flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -52,19 +48,19 @@
     font-size: 1em;
     text-align: center;
 }
-.desc-player-name{
+.desc--player--name{
     margin-top:10px;
     
-    @include desc-player()
+    @include  desc-player()
 }
-.desc-player-role{
+.desc--player--role{
     color : $color-primary;
     @include desc-player()
 }
-.info-player{
+.info--player{
     max-width: 11em;
 }
-.avt-player
+.avt--player
 {
     background-color: white;
     display: block;
@@ -75,43 +71,7 @@
     display: flex;
     justify-content: center;
 }
-.desc-player-nationality{
+.desc--player--nationality{
     @include desc-player();
     margin-left: 10px;
-}
-.desc-manager-name{
-    font-family: $font-primary;
-    font-size: 1em;
-}
-.desc-manager-time{
-    font-family: $font-primary;
-    font-size: 1em;
-}
-
-.desc-manager-age{
-    font-family: $font-primary;
-    font-size: 1em;
-}
-.info-manager{
-    display: flex;
-    justify-content: center; 
-    margin-top: 2em;
-}
-.avt-manager{
-   display: block;
-  //  margin: auto;
-    width:6em;
-    height: 6em;
-}
-.infor-detail-manager{
-    color : $color-primary;
-    margin-left: 10px;
-  
-}
-.detail-manager{
-    margin-left: 5px;
-}
-.hidden{
-    display: flex;
-    visibility: hidden;
 }

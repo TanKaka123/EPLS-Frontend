@@ -1,18 +1,17 @@
-import React from "react";
-import "./_navmenu.scss";
+import "./navBarMobile.scss";
 
 function modalHeader({ closeMenu }: any) {
   function closeNavMenu() {
     closeMenu(false);
   }
   return (
-    <div className="menu-contain">
+    <div className="menu_contain">
       <div className="menu">
-        <img src="./logo.png" alt="" className="logo-menu" />
-        <p className="close-menu" onClick={closeNavMenu}>
+        <img src="./logo.png" alt="" className="menu_logo" />
+        <p className="menu_close" onClick={closeNavMenu}>
           X
         </p>
-        <ul className="nav-menu">
+        <ul className="menu_nav">
           <li  onClick={closeNavMenu}>
             <a href="#" >
               Trang chủ

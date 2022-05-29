@@ -9,131 +9,25 @@
 
 .list-all-record {
     white-space: nowrap;
-    
     margin-bottom: 20px;
-    
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
 @media (min-width:46.25em) and(max-width:63.9375em) {
     .title-record{
         font-size: $font-size-tablet-primary;
     }
 }
-@media (min-width:46.2em)
-{
-    .list-all-record {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
+
 @media (max-width:46.2em) {
     .title-record{
         font-size: $font-size-tablet-secondary;
     }   
     .list-all-record {
-        display: flex;
-        
         overflow: auto;
         flex-wrap:nowrap;
     }
-    .table-record{
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    }
-}
-
-.name-player-record{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 13px;
-}
-.name-clb-record{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:10.8px;
-}
-.row-record{
-    display: flex;
-    border: 1px solid ;
-    border-left: none;
-    border-right: none;
-    border-collapse: collapse;
-}
-.number-record{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 13px;
-}
-.position-record{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 10px;
-    margin-right: 1.2rem;
-}
-.infor-player-record{
-    margin-right: 1rem;
-    width: 10rem;
-}
-.badge-image {
-    width: 25px;
-    height: 25px;
-    display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 1rem;
-}
-.table-record{
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 2%;
-    margin-bottom: 2rem;
-}
-
-.name-player-record-1st{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 1.2rem;
-}
-.name-clb-record-1st{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:1rem;
-    font-weight: 200;
-}
-.position-record-1st{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size:1.2rem;
-    font-weight:600;
-    margin: 0%;
-}
-.number-record-1st{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 3rem;
-    color:$color-secondary;
-    margin: 0%;
-}
-.row-record-1st{
-    background: linear-gradient(270deg,#963cff,#37003c);
-    color : white;
-    display: flex;
-    padding: 10px;
-    justify-content: space-between;
-    
-}
-.badge-image-1st{
-    display: block;
-    margin-top: auto;
-   
-}
-.title-type-record{
-    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
-    margin: 0%;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.infor-player-record-1st{
-    width: 200px;
-}
-.radius-clb-record{
-    border-radius: 100%;
-    background-color: white;
-    padding: 15px;
 }

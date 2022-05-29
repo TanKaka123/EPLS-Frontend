@@ -1,19 +1,17 @@
-import axiosClient from "./axiosClient";
+import axios from 'axios';
+import  { useEffect,  useState } from 'react';
 
-const recordApi= {
-    getAll :() => {
-    const url = '/records';
-    return axiosClient.get(url);
-    },
-    // post :(params : any) => {
-    //     const url = '/clb';
-    //     return axiosClient.post(url,params);
-    // },
-    // delete :(params : any) => {
-       
-    //     const url = `/clb/${params}`;
-    //     console.log("url : ",url);
-    //     return axiosClient.delete(url);
-    // },
+export function RecordApi() {
+    
+    const [ListRecord,SetListRecord] = useState([]);
+
+    useEffect(()=>{
+        axios.get("https://eplscores.herokuapp.com/api/records")
+        .then(response => response.data)
+        .then((data) => {
+            SetListRecord(data.data);
+        });
+    },[])
+    return ListRecord ; 
 }
-export default recordApi;
+

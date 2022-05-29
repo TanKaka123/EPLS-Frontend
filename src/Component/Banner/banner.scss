@@ -2,78 +2,63 @@
 
 .banner-contain{
     position : relative;
+
+    .banner{ 
+        display: block;
+        position: relative;
+        margin: auto;
+        margin-top: 10px;
+        width: 94vw;
+    }
+
+    .text-banner {
+        background-color:rgba(0, 0, 0, 0.722);
+        height: 100%;  
+        padding-left: 3vw;
+        padding-right: 5vw;   
+        position : absolute;
+        left :1vw;
+        max-width: 55vw;
+        top:0vh;
+    }
 }
-.banner{ 
-    width: 94vw;
-    display: block;
-    margin: auto;
-    margin-top: 10px;
-    position: relative;
-}
-.desc-banner{
-  font-family: $font-secondary;
-  margin-top: 3vw;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: 400;
-  padding-right: 10px;
-}
+
 .title-banner{
     font-family : $font-primary;
     font-size : 60px;
-    margin-top: 20vh;
-    
+    margin-top: 15  vh;
 }
+
 .line{
     background-color: $color-secondary;
     width: 20vw;
     height: 0.7vw;
     margin-top: -1.5vw;
 }
-.text-banner {
-    position : absolute;
-    top:0vh;
-    left :1vw;
-    background-color:rgba(0, 0, 0, 0.722);
-    
-   
-    max-width: 55vw;
-    height: 100%;  
-    padding-left: 3vw;   
+
+.banner-desc{
+  margin-left: -2vw;
+  margin-top: 3vw;
+  
+    li{
+        align-items: center;
+        display: flex; 
+        list-style-type: none;
+
+        p{
+            font-family: 'Patrick Hand', cursive;
+            font-weight: 400;
+            font-size: 2vw;
+            padding-left: 30px;
+        }
+  }
+  
 }
 
-@media (min-width:46.25em) and(max-width:63.9375em) {
-    .title-banner{
-        font-size: $font-size-tablet-primary ;
-        margin-top: 10vh;
-    }
-    .desc-banner{
-        font-size: 3vh;
-    }
-    .line{
-        width: 30vw;
-    }
-    .desc-banner{
-        display: none;
-    }
-}
 
-@media (max-width:46.24em){
-    .title-banner{
-        font-size: $font-size-tablet-secondary;
-        margin-top: 7vh;
-    }
-    .desc-banner{
-        font-size: 2vh;
-    }
-    .line{
-        width: 30vw;
-    }
+@media (max-width:63.9375em){
     .text-banner
     {
-       margin-top: 0;
-        left : 0;
-    }
-    .desc-banner{
         display: none;
     }
 }

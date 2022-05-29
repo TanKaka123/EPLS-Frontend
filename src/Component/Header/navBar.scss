@@ -1,29 +1,24 @@
-@import "../../Abstracts/valuable";
+@import '../../Abstracts/valuable';
 
-.navbar {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-
-    li {
-        display: inline-block;
-        font-family: $font-primary;
-        font-size: 20px;
-        font-weight: 700;
-        padding-right: 4rem;
-
-        a {
-            color: white;
+.navbar {  
+    ul{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items : center;
+        li {
             list-style-type: none;
-            position: relative !important;
             text-decoration: none;
-            transition: all 0.3s ease 0.1s;
+            font-family: $font-primary;
+            font-size: 20px;
+            font-weight: 700;
+            a {
+                color: white;
+                position: relative !important;
+                text-decoration: none;
+                transition: all 0.3s ease 0.1s;
+            }
         }
-    }
-}
-@media (max-width: 63.9375em) {
-    .navbar {
-        display: none;
     }
 }
 

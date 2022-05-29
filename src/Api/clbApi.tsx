@@ -1,19 +1,17 @@
-import axiosClient from "./axiosClient";
+import axios from 'axios';
+import  { useEffect, useRef, useState } from 'react';
 
-const clbApi= {
-    getAll :() => {
-    const url = '/clb';
-    return axiosClient.get(url);
-    },
-    // post :(params : any) => {
-    //     const url = '/clb';
-    //     return axiosClient.post(url,params);
-    // },
-    // delete :(params : any) => {
-       
-    //     const url = `/clb/${params}`;
-    //     console.log("url : ",url);
-    //     return axiosClient.delete(url);
-    // },
+export function ClbApi() {
+    
+    const [ListClb,SetListClb] = useState([]);
+
+    useEffect(()=>{
+        axios.get("https://eplscores.herokuapp.com/api/clb")
+        .then(response => response.data)
+        .then((data) => {
+            SetListClb(data.data);
+        });
+    },[])
+    return ListClb ;
 }
-export default clbApi;
+
