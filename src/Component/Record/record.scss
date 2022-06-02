@@ -15,7 +15,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
+@media (min-width:1200px) and (max-width:1500px)
+{
+    .list-all-record
+    {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap:40px;
+        
+    }
+}
 @media (min-width:46.25em) and(max-width:63.9375em) {
     .title-record{
         font-size: $font-size-tablet-primary;
