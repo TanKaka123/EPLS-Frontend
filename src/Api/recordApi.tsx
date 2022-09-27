@@ -6,7 +6,7 @@ export function RecordApi() {
     const [ListRecord,SetListRecord] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://eplscores.herokuapp.com/api/records")
+        axios.get(`${process.env.REACT_APP_API}/records`)
         .then(response => response.data)
         .then((data) => {
             SetListRecord(data.data);

@@ -7,6 +7,12 @@
     @include striker;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .list-all-record {
     white-space: nowrap;
     margin-bottom: 20px;

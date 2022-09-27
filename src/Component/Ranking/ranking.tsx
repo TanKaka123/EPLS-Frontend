@@ -1,26 +1,28 @@
 import './ranking.scss';
+import Loading from '../Loading/Loading';
 import {ScoresApi} from '../../Api/ScoresApi'
 import {ClbApi} from '../../Api/ClbApi';
 
+
 function Ranking() {    
-    const scores = ScoresApi()
-    const clb= ClbApi();
+    const SCORES = ScoresApi()
+    const CLB= ClbApi();
   
     const sortDecrPoinnt=()=>{
-        for(var i=0;i<scores.length-1;i++)
-            for ( var j=i+1;j<scores.length;j++)
-            {
-                if(scores[i]['score']['Pts']<scores[j]['score']['Pts'])
+        for(var i=0;i<SCORES.length-1;i++)
+            for ( var j=i+1;j<SCORES.length;j++)
+            {   
+                if(SCORES[i]['score']['Pts']<SCORES[j]['score']['Pts'])
                 {
-                    const flag=scores[i];
-                    scores[i]=scores[j];
-                    scores[j]=flag;
+                    const flag=SCORES[i];
+                    SCORES[i]=SCORES[j];
+                    SCORES[j]=flag;
                 }
-                else if (scores[i]['score']['Pts']==scores[j]['score']['Pts'] && scores[i]['score']['GD']<scores[j]['score']['GD'])
+                else if (SCORES[i]['score']['Pts']==SCORES[j]['score']['Pts'] && SCORES[i]['score']['GD']<SCORES[j]['score']['GD'])
                 {
-                    const flag=scores[i];
-                    scores[i]=scores[j];
-                    scores[j]=flag;
+                    const flag=SCORES[i];
+                    SCORES[i]=SCORES[j];
+                    SCORES[j]=flag;
                 }
             }
     }
@@ -28,8 +30,14 @@ function Ranking() {
     sortDecrPoinnt();
 
     return (
+        
         <div id="ranking">
             <h1 className="title-ranking">Xếp hạng top 7 </h1>
+           
+           
+          { !SCORES ? <div className="center">
+                            <Loading/>
+                    </div> : 
             <div className="rank_scroll">
                 <table className="rank_table">
                     <tr className="table_tittle--rank">
@@ -47,14 +55,14 @@ function Ranking() {
                     </tr>
     
                 {
-                    scores.map((value,key)=>{
+                     SCORES && SCORES.map((value,key)=>{
                         const LastFiveGame=value['Last5'];
                         var imageTeam='No image';
-                        for(var i=0;i<clb.length;i++)
+                        for(var i=0;i<CLB.length;i++)
                         {
-                            if(clb[i]['teamName']==value['teamName'])
+                            if(CLB[i]['teamName']==value['teamName'])
                             {
-                                imageTeam=clb[i]['imgTeam'];
+                                imageTeam=CLB[i]['imgTeam'];
                                 break;
                             }
                         }
@@ -75,7 +83,7 @@ function Ranking() {
                                     <td className='rank-scores all-points'>{value['score']['Pts']}</td>
                                     <td className="list-five-match">
                                     {
-                                        Object.keys(LastFiveGame).map(function(key, index) {
+                                        Object && Object.keys(LastFiveGame).map(function(key, index) {
                                             return(
                                                 <div key={index} >
                                                     {
@@ -94,7 +102,7 @@ function Ranking() {
                     })
                 }
              </table>
-             </div>
+             </div>}
         </div>
     );
 }

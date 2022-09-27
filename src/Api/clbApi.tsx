@@ -4,9 +4,9 @@ import  { useEffect, useRef, useState } from 'react';
 export function ClbApi() {
     
     const [ListClb,SetListClb] = useState([]);
-
+   
     useEffect(()=>{
-        axios.get("https://eplscores.herokuapp.com/api/clb")
+        axios.get(`${process.env.REACT_APP_API}/clb`)
         .then(response => response.data)
         .then((data) => {
             SetListClb(data.data);

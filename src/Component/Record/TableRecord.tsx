@@ -2,12 +2,11 @@ import "./TableRecord.scss";
 
 function TableRecord(props :{data:any,keyRecord:string}) {
     var position=1;
-    console.log(props.keyRecord);
     return (
         <div>
           <div className="table--record">
             <h1 className="">{props.keyRecord}</h1>
-            { props.data.map((val:any, key:number) => {
+            {props &&  props.data.map((val:any, key:number) => {
               if(val["title"] == props.keyRecord && position==1){
                 position=2;
                 return (

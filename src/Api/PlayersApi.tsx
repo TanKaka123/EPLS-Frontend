@@ -6,7 +6,7 @@ export function PlayersApi() {
     const [ListPlayer,SetListPlayer] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://eplscores.herokuapp.com/api/players")
+        axios.get(`${process.env.REACT_APP_API}/players`)
         .then(response => response.data)
         .then((data) => {
             SetListPlayer(data.data);

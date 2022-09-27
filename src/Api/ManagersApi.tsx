@@ -4,9 +4,9 @@ import  { useEffect, useRef, useState } from 'react';
 export function ManagersApi() {
     
     const [ListManagers,SetListManagers] = useState([]);
-
+    
     useEffect(()=>{
-        axios.get("http://eplscores.herokuapp.com/api/managers")
+        axios.get(`${process.env.REACT_APP_API}/managers`)
         .then(response => response.data)
         .then((data) => {
             SetListManagers(data.data);

@@ -6,7 +6,7 @@ export function ScoresApi() {
     const [ListScores,SetListScores] = useState([]);
 
     useEffect(()=>{
-        axios.get("https://eplscores.herokuapp.com/api/scores")
+        axios.get(`${process.env.REACT_APP_API}/scores`)
         .then(response => response.data)
         .then((data) => {
             SetListScores(data.data);

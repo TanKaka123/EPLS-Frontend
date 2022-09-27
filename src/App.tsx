@@ -8,7 +8,11 @@ import Interesting from "./Component/Interesting/interesting";
 import Footer from "./Component/Footer/footer";
 import Record from "./Component/Record/record";
 
+
+
 function App() {
+  console.log("sdsadas",process.env)
+
   return (
     <div className="App">
       <Header />
