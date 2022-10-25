@@ -19,7 +19,7 @@ function Header() {
             <path d="M0 25C0 23.676 1.07329 22.6027 2.39726 22.6027H47.6027C48.9267 22.6027 50 23.676 50 25V25C50 26.324 48.9267 27.3973 47.6027 27.3973H2.39726C1.07329 27.3973 0 26.324 0 25V25Z" fill="white"/>
           </svg>
           </div>
-          <img src="./logo.png" alt="" className="logo" />
+          <img src={require("../../assets/images/logo/logo.png")} alt="" className="logo" />
           <NavBar/>
         </header>
       </div>

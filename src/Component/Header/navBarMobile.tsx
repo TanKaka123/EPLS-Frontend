@@ -7,7 +7,7 @@ function modalHeader({ closeMenu }: any) {
   return (
     <div className="menu_contain">
       <div className="menu">
-        <img src="./logo.png" alt="" className="menu_logo" />
+        <img src={require("../../assets/images/logo/logo.png")} alt="" className="menu_logo" />
         <p className="menu_close" onClick={closeNavMenu}>
           X
         </p>

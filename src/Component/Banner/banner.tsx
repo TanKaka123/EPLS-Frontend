@@ -1,11 +1,10 @@
-import React from "react";
-import Ball from "./Ball"
+import Ball from "./Ball";
 import "./banner.scss";
 
 function Banner() {
   return (
     <div className="banner-contain">
-      <img src="./Banner/banner.png" alt="banner" className="banner" />
+      <img src={require("../../assets/images/banner/banner.png")} alt="banner" className="banner" />
       <div className="text-banner">
         <h1 className="title-banner">EPL SCORES</h1>
         <p className="line"></p>

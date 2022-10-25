@@ -1,5 +1,5 @@
-@import '../../Abstracts//valuable';
-@import '../../Abstracts/mixin';
+@import '../../scss//variables/variables';
+@import '../../scss/mixins/mixins';
 
 .title-other{
     font-size: $fontsize-head;

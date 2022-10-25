@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
 import './interesting.scss';
-import champion from './champion.json'
+import champion from '../../assets/data/champion.json';
 import Champion from "./Champion";
 
 

@@ -1,17 +1,16 @@
 import React,{useState} from "react";
 import "./App.scss";
-import Header from "./Component/Header/header";
-import Banner from "./Component/Banner/banner";
-import Ranking from "./Component/Ranking/ranking";
-import Stars from "./Component/Stars/stars";
-import Interesting from "./Component/Interesting/interesting";
-import Footer from "./Component/Footer/footer";
-import Record from "./Component/Record/record";
+import Header from "./component/header/header";
+import Banner from "./component/banner/banner";
+import Ranking from "./component/ranking/ranking";
+import Stars from "./component/stars/stars";
+import Interesting from "./component/interesting/interesting";
+import Footer from "./component/footer/footer";
+import Record from "./component/record/record";
 
 
 
 function App() {
-  console.log("sdsadas",process.env)
 
   return (
     <div className="App">

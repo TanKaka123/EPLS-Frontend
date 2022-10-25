@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Facebook, Instagram, Gmail } from "./icon";
+import { Github, Linkedin, Facebook, Instagram, Gmail } from "../../assets/icon/icon";
 import "./footer.scss";
 
 function footer() {

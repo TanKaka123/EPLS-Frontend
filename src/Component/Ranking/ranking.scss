@@ -1,5 +1,6 @@
-@import '../../Abstracts/valuable';
-@import '../../Abstracts/mixin';
+@import '../../scss//variables/variables';
+@import '../../scss/mixins/mixins';
+
 
 .title-ranking{
     font-family : $font-primary;

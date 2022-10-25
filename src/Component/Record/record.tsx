@@ -1,6 +1,6 @@
 import "./record.scss";
-import { RecordApi } from "../../Api/RecordApi";
-import Loading from "../Loading/Loading";
+import { RecordApi } from "../../api/recordApi";
+import Loading from "../loading/Loading";
 import TableRecord from "./TableRecord";
 
 function Record() {
